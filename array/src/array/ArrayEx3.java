@@ -14,7 +14,7 @@ public class ArrayEx3 {
         // String 배열 선언, 생성
         String[] strArr = { "A", "B", "C", "D" };
         // ArrayIndexOutOfBoundsException
-        System.out.println(strArr[0]);
+        System.out.println(strArr[3]);
     }
 
 }
