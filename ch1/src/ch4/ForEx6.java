@@ -11,6 +11,9 @@ public class ForEx6 {
             if (i % 3 == 0) {
                 sum += i;
             }
+            if (i % 9 == 0) {
+                sum -= i;
+            }
         }
         System.out.println("1 ~ 100까지 숫자 중에서 3의 배수(단, 9의 배수는 제외) 합 " + sum);
 
