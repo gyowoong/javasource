@@ -1,13 +1,11 @@
 package classtest;
 
-public class Account {
+public class Account2 {
     private String accountNo; // 계좌번호(accountNo) : 101-11-12345
     private String owner;// 계좌주(owner) : 홍길동
     private int balance;// 잔액(balance) : 1000000
-    public final static int max_balance = 1000000;
-    public final static int min_balance = 0;
 
-    public Account(String accountNo, String owner, int balance) {
+    public Account2(String accountNo, String owner, int balance) {
         this.accountNo = accountNo;
         this.owner = owner;
         this.balance = balance;
@@ -45,9 +43,9 @@ public class Account {
         return balance;
     }
 
-    @Override
+    @Override // 주소 안나오게 하는 객체
     public String toString() {
-        return "Account [accountNo=" + accountNo + ", owner=" + owner + ", balance=" + balance + "]";
+        return "Account2 [accountNo=" + accountNo + ", owner=" + owner + ", balance=" + balance + "]";
     }
 
 }
