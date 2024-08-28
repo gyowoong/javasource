@@ -1,0 +1,25 @@
+modifier(제어자)
+- 클래스, 변수, 메소드의 선언부에 함께 사용
+- 접근제어자(가장 중요)
+    - public, protected, defalut(안 붙이는 경우), prtivate
+    - 클래스, 멤버변수, 메소드, 생성자에 사용
+    - public : 접근 제한 없음
+    - protected : 같은 패키지 내에서, 다른 패키지의 자손 클래스에서 접근 가능
+    - default : 같은 패키지 내
+    - private : 같은 클래스 내
+    - public > protected > defalut > private
+- 그 외
+    - static, final, abstract..
+    - stactic : 멤버변수, 메소드, import 구문에 사용
+        - 멤버변수, 메소드 : 클래스이름.멤버변수 / 클래스이름.메소드() => 공유
+        - static import : 특정 클래스의 static 멤버 사용할 때 클래스 이름을 안 붙이고 사용가능
+     - final : 마지막의, 변경될 수 없는
+      - 클래스, 메소드, 멤버변수, 지역변수 사용
+      - final class : 상속불가
+      - final 멤버변수/지역변수 : 값 변경 불가(== 상수)
+      - final 메소드 : 오버라이딩 금지
+
+- 상수 선언
+final static int MAX = 10;
+static final int MAX = 10; => 상수선언 할 때 static final 같이 붙힘
+
