@@ -2,8 +2,11 @@ package shop;
 
 public class ShopEx {
     public static void main(String[] args) {
-        MyShop shop = new MyShop();
+        // 배열
+        // MyShop shop = new MyShop();
 
+        // 리스트
+        MyShop2 shop = new MyShop2();
         // 상점이름 지정
         shop.setTitle("Myshop");
         // user 생성
