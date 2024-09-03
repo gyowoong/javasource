@@ -55,12 +55,12 @@ public class MyShop implements IShop {
         // 선택 >>
         System.out.println(title + " : 메인화면 - 계정선택");
         System.out.println("================================");
-        for (int i = 0; i < products.length; i++) {
-            System.out.printf("[%d] %s(%s)\n", i, users[i].getName(), users[i].getPayType());
+        for (int i = 0; i < users.length; i++) {
+            System.out.printf("[%d] %s(%s)\n", (i + 1), users[i].getName(), users[i].getPayType());
             System.out.println("[X] 종료");
             System.out.print("선택 >> ");
             // 사용자 입력이 1,2 인 경우 productList() 호출
-            // X 인 경우 : System.exit()
+            // X 인 경우 : System.exit(0)
             String input = sc.nextLine();
 
             switch (input) {
@@ -96,6 +96,17 @@ public class MyShop implements IShop {
         // [c] 체크아웃
         // 선택 >>
 
+        System.out.println(title + " : 상품목록 - 상품선택");
+        System.out.println("========================================");
+
+        int i = 0;
+        for (Product product : products) {
+            System.out.printf("[%d]", i++);
+            product.printDetail();
+        }
+        System.out.println("[h] 메인화면");
+        System.out.println("[c] 체크아웃");
+        System.out.print("선택 >> ");
         // 메뉴 받기
         String input = sc.nextLine();
         // 0~4 or h or c
